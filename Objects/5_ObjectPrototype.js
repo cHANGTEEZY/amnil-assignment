@@ -1,12 +1,22 @@
-class Circle {
-  constructor(radius) {
-    this.radius = radius;
+// function Person(name) {
+//   this.name = name;
+// }
+
+// Person.prototype.greet = function () {
+//   console.log(`Hello ${this.name}`);
+// };
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hello ${this.name}`);
   }
 }
 
-Circle.prototype.area = function () {
-  return Math.PI * this.radius * this.radius;
-};
-
-const circle = new Circle(5);
-console.log(circle.area());
+const person1 = new Person("Ram");
+const person2 = new Person("Hari");
+person1.greet();
+person2.greet();
