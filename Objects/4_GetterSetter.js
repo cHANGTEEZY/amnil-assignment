@@ -20,7 +20,3 @@ class Circle {
 }
 
 const myCircle = new Circle(5);
-console.log(myCircle);
-console.log(myCircle.area);
-myCircle.radius = 2;
-console.log(myCircle.area);
