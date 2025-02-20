@@ -16,11 +16,10 @@ class Student {
     this.age = age;
     this.course = course;
 
-    this.introduce = function () {
+    this.introduce = () =>
       console.log(
         `Hi, my name is ${this.name}. I am ${this.age} years old and studying ${this.course}.`
       );
-    };
   }
 }
 const student1 = new Student("Sushank", 22, "BSc.CSIT");
