@@ -18,7 +18,11 @@ console.log(extendedPerson);
 
 console.log("\n3. Spread operator in function arguments:");
 const numbers = [1, 2, 3, 4, 5];
+
 console.log(Math.max(...numbers)); // 5
+
+
+
 
 // Rest Operator Examples
 console.log("\n4. Rest operator in function parameters:");

@@ -23,7 +23,7 @@ console.log("Shallow copy:", shallowCopy1);
 console.log("\n2. Deep Copy Examples:");
 // Method 1: Using JSON.parse(JSON.stringify())
 const deepCopy1 = JSON.parse(JSON.stringify(originalObj));
-// Method 2: Using structured clone (modern browsers)
+// Method 2: Using structured clone 
 const deepCopy2 = structuredClone(originalObj);
 
 console.log("\nOriginal object:", originalObj);
