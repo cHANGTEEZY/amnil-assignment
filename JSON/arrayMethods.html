@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Display</title>
+    <style>
+      body {
+        background-color: #5d5c5c;
+        color: #ffffff;
+        max-width: 1200px;
+        margin: auto;
+        font-family: "Arial", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        row-gap: 20px;
+        column-gap: 40px;
+        justify-items: center;
+        width: 100%;
+        max-width: 1800px;
+      }
+      .product {
+        background-color: #4a4747;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .product img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 18px;
+        margin: 10px 0;
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+        color: #ffffff;
+        margin: 5px 0;
+      }
+      .price {
+        font-size: 16px;
+        font-weight: bold;
+        color: #738a74;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container"></div>
+    <script>
+      const container = document.getElementById("container");
+
+      const getData = async () => {
+        const response = await fetch(
+          "https://dummyjson.com/products/category/smartphones"
+        );
+
+        if (response.ok) {
+          data = await response.json();
+          console.log(data.products);
+
+          const filteredProducts = data.products.filter(
+            (product) => product.price <= 1200 && product.price >= 300
+          );
+          console.log("Filtered Products are:", filteredProducts);
+
+          filteredProducts.forEach((product) => {
+            const productElement = document.createElement("div");
+            productElement.classList.add("product");
+            productElement.innerHTML = `
+            <img src=${product.images[0]} alt=${product.description} />
+            <h3>${product.title}</h3>
+            <p>${product.description}</p>
+            <p class="price">Price: $${product.price}</p>`;
+            container.appendChild(productElement);
+          });
+        } else {
+          console.log("Something went wrong");
+        }
+      };
+      getData();
+    </script>
+  </body>
+</html>
