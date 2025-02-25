@@ -6,7 +6,7 @@ const string2 = `Hello`; // using template literals
 const age = 22;
 
 //? Using Concatenation
-console.log("I am  " + age + " year old");
+console.log("I am  " + age + " year old"); //* I am  22 year old
 
 //? Using Template Literals
-console.log(`I am ${age} year old`);
+console.log(`I am ${age} year old`); //* I am 22 year old
