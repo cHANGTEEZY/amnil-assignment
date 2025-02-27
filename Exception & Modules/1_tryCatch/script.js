@@ -47,6 +47,8 @@ const getData = async () => {
     }
   } catch (err) {
     console.error(err.message);
+  } finally {
+    console.log("API request completed.");
   }
 };
 

@@ -22,6 +22,8 @@ const getData = async () => {
     }
   } catch (err) {
     throw new Error(err.message || "Something went wrong");
+  } finally {
+    console.log("API request completed.");
   }
 };
 getData();
