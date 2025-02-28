@@ -1,4 +1,3 @@
-// Basic setTimeout example
 console.log("setTimeout starting...");
 
 setTimeout(function () {
@@ -7,5 +6,4 @@ setTimeout(function () {
 
 console.log("setTimeout has been scheduled");
 
-// Basic setInterval example
 console.log("setInterval starting...");
