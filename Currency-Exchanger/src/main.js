@@ -17,7 +17,7 @@ const convert = document.getElementById("convert");
 
 convert.addEventListener("click", async () => {
   const inputData = getAllInputData();
-  console.log("Input data:", inputData);
+  // console.log("Input data:", inputData);
 
   if (!inputData.date) {
     alert("Please select a date");
@@ -36,7 +36,7 @@ convert.addEventListener("click", async () => {
 
   try {
     const exchangeRateData = await getExchangeRates(inputData);
-    console.log("Exchange rate data:", exchangeRateData);
+    // console.log("Exchange rate data:", exchangeRateData);
 
     if (exchangeRateData) {
       displayExchangeRates(exchangeRateData, inputData);

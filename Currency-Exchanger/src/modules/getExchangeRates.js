@@ -2,7 +2,7 @@ const BASE_URL = "https://api.currencyfreaks.com/v2.0/rates/latest?apikey=";
 const API_KEY = import.meta.env.VITE_API_KEY;
 
 const getExchangeRates = async (inputData) => {
-  console.log("Input data received", inputData);
+  // console.log("Input data received", inputData);
 
   if (!inputData.placeHolderArray || inputData.placeHolderArray.length < 2) {
     console.error("Invalid input data: Missing currency information.");
@@ -20,7 +20,7 @@ const getExchangeRates = async (inputData) => {
   const symbols = `${fromCurrency},${toCurrency}`;
   let API_URL = `${BASE_URL}${API_KEY}&symbols=${symbols}`;
 
-  console.log(API_URL);
+  // console.log(API_URL);
 
   try {
     if (!API_KEY) {
