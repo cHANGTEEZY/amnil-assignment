@@ -7,10 +7,10 @@
 }
 
 :root {
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
-  --secondary: #f59e0b;
-  --tertiary: rgb(97, 131, 108);
+  --primary: #6d6eb5;
+  --primary-dark: #4c4981;
+  --secondary: #3f3e3c;
+  --tertiary: rgb(71, 73, 72);
   --text: #1f2937;
   --text-light: #6b7280;
   --background: #f9fafb;
