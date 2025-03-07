@@ -5,7 +5,6 @@ const fetchJoke = () => {
 };
 
 const promise1 = fetchJoke();
-
 const promise2 = fetchJoke();
 const promise3 = Promise.reject("This promise intentionally fails");
 
