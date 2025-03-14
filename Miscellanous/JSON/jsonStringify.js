@@ -6,5 +6,3 @@ const person = {
 
 const jsonString = JSON.stringify(person);
 console.log(jsonString);
-
-//converted the js object to json
