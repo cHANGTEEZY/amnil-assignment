@@ -1,0 +1,8 @@
+{
+  "users": [
+    { "id": 1, "name": "Ram", "address": { "city": "KTM" } },
+    { "id": 2, "name": "Shyam", "address": { "city": "Dharan" } },
+    { "id": 3, "name": "Hari", "address": { "city": "PKR" } },
+    { "id": 4, "name": "Dani", "address": { "city": "USa" } }
+  ]
+}
