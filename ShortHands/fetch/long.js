@@ -9,7 +9,7 @@ async function fetchUserLong() {
     const users = await response.json();
 
     let firstUser;
-    if (Array.isArray(users) && users.length > 0) {
+    if (users.length > 0) {
       firstUser = users[0];
     } else {
       firstUser = null;
