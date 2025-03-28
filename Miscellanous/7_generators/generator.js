@@ -22,8 +22,8 @@ for (let letter of letters()) {
 
 function* myGenerator() {
   yield "A";
-  return "B"; // Ends the generator
-  yield "C"; // This will never run
+  return "B";
+  yield "C";
 }
 
 const gen1 = myGenerator();
