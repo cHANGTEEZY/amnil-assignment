@@ -1,6 +1,7 @@
 import "./App.css";
 import React, { createContext, useState } from "react";
 import Grandparent from "../components/GrandParent";
+import Input from "../components/Input";
 
 // Create a theme context
 export const ThemeContext = createContext();
@@ -20,6 +21,7 @@ function App() {
           Toggle Theme: {theme}
         </button>
         <Grandparent />
+        <Input />
       </ThemeContext.Provider>
     </div>
   );
