@@ -1,0 +1,62 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.App.light {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.App.dark {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.component {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #666;
+}
+
+.light .component {
+  background-color: #fff;
+}
+
+.dark .component {
+  background-color: #444;
+}
+
+.grandparent {
+  border-color: #e74c3c;
+}
+
+.parent {
+  border-color: #3498db;
+}
+
+.child {
+  border-color: #2ecc71;
+}
+
+.theme-display {
+  border-color: #9b59b6;
+  margin-top: 15px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.theme-toggle {
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
