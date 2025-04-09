@@ -1,0 +1,15 @@
+[submodule "Projects/amnil-auth"]
+	path = Projects/amnil-auth
+	url = https://github.com/cHANGTEEZY/amnil-auth.git
+[submodule "Projects/Amnil-Ecom"]
+	path = Projects/Amnil-Ecom
+	url = https://github.com/cHANGTEEZY/Amnil-Ecom.git
+[submodule "Projects/currency-exchanger"]
+	path = Projects/currency-exchanger
+	url = https://github.com/cHANGTEEZY/currency-exchanger.git
+[submodule "Projects/ms-paint"]
+	path = Projects/ms-paint
+	url = https://github.com/cHANGTEEZY/ms-paint.git
+[submodule "Projects/react-amnil-auth"]
+	path = Projects/react-amnil-auth
+	url = https://github.com/cHANGTEEZY/react-amnil-auth.git
