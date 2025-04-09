@@ -13,3 +13,6 @@
 [submodule "Projects/react-amnil-auth"]
 	path = Projects/react-amnil-auth
 	url = https://github.com/cHANGTEEZY/react-amnil-auth.git
+[submodule "Projects/VBee"]
+	path = Projects/VBee
+	url = https://github.com/cHANGTEEZY/VBee.git
